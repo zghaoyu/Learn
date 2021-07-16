@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#kong{
+				display: none;
+				color: red;
+			}
+		</style>
+	</head>
+	
+	<body>
+		
+		<form action="">
+			姓名<input type="text" id="name" /><span id="kong">姓名不能为空</span> <br/>
+			<input type="button" id="sub"  value="提交" />
+		</form>
+	</body>
+	<script type="text/javascript">
+		document.getElementById("sub").onclick = function(){
+			var n=document.getElementById("name").value;
+			if(n==""){document.getElementById("kong").style.display="inline";}
+				
+			else
+				{document.getElementById("kong").style.display="none";}
+		};
+		
+	</script>
+</html>
